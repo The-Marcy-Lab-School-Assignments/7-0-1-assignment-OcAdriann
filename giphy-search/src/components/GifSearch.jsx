@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function GifSearch({ onSearch, setSearchTerm }) {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,9 @@ function GifSearch({ onSearch, setSearchTerm }) {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <button type="submit" className="btn btn-success">Search</button>
+      <button type="submit" className="btn btn-success">
+        Search
+      </button>
     </form>
   );
 }
